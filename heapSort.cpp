@@ -5,7 +5,18 @@ using namespace std;
 // shell sort
 int main(){
     int arr[]={5,4,3,2,1};
-    
+    // insertion sort
+    /* for(int i=1;i<5;i++){
+            int curr=arr[i];
+            int j=i-1;
+            while(j>=0 && arr[j]>curr){
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j+1]=curr;
+        }
+    */
+    //shell sort 
     for(int gap=5/2;gap>=1;gap=gap/2){
        
         for(int j=gap;j<5;j++){
